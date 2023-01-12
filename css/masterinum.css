@@ -1,0 +1,151 @@
+/* Product Advanced Featuress Section
+--------------------------------*/
+#advanced-features .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#advanced-features h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+#advanced-features h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#advanced-features p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#advanced-features i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#advanced-features i:before {
+  background: #2432ac;
+  background: linear-gradient(45deg, #2432ac 0%, #2432ac 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#advanced-features .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#advanced-features .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+@media (max-width: 768px) {
+  #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  #advanced-features .advanced-feature-img-right, #advanced-features .advanced-feature-img-left {
+    max-width: 100%;
+    float: none;
+    padding: 0 0 30px 0;
+  }
+}
+
+
+/* CSS Untuk tabel */
+table{box-shadow:0px 0px 5px #aaa;} /*sedikit bayangan yang soft*/
+table th{
+    padding:10px; 
+    font-weight:bold; 
+    background:#2432ac; 
+    color:#fff; 
+    text-transform:uppercase;
+}
+
+table td{
+    padding:10px 5px;
+}
+
+@media (min-width:700px){
+/*UNTUK DEVICE YANG LEBARNYA LEBIH DARI 700PX */
+/*karena tabel kita yang tadi itu untuk device layar lebar, maka taruh saja semuanya disini...*/
+    table th{
+        padding:5px; 
+        font-weight:bold; 
+        background:#2432ac; 
+        color:#fff; 
+        text-transform:uppercase;
+    }
+    table td{
+        padding:10px 5px;
+    }
+}
+ 
+@media (max-width:700px){
+/*UNTUK DEVICE YANG LEBARNYA KURANG DARI 700PX*/
+ 
+}
+
+@media (max-width:700px){
+    table,tbody,td{
+        display:block; 
+        position:relative;
+    }
+    tr{border-bottom:3px solid #fff;}
+    /*th{display:none;}*/
+    td:before{
+        display:block;
+        /*content:attr(data-content); /*mengisi data dengan value yang ada di atribut tersebut*/
+        position:absolute;
+        text-indent:0px;
+        width:80px; /*disesuaikan dengan kebutuhan*/
+ 
+        /*desainnya bisa disamakan seperti tag TH*/
+        background:#2432ac; 
+        color:#fff; 
+        text-transform:uppercase; 
+        font-weight:bold; 
+        height:100%; 
+        line-height:40px; 
+        padding:0px 10px;
+    }
+    td{
+        text-indent:30px; /*disesuaikan dengan kebutuhan untuk mengatur panjang tidak tulisan*/
+        line-height:40px; /*line-height disamakan dengan td:before, supaya tampilan teksnya rata*/
+        background:#f7f7f7;
+    }
+}
+
+.timelinebg {
+  width: 100%;
+  height: fit-content;
+  background:  url("../img/bgtimeline.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+
+.howtoapp {
+  width: 100%;
+  height: fit-content;
+  background:  #2432ac;
+  background-size: cover;
+  position: relative;
+  color:white;
+  margin-top:-10px ;
+}
