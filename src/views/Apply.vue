@@ -1,53 +1,60 @@
 <script setup>
 import { ref } from 'vue'
+import { programs } from '../data';
 import Breadcrumb from '../components/Breadcrumb.vue'
 import Button from '../components/Button.vue';
 
-let opened = ref(false)
+const opened = ref(0)
 
-const handleAccordion = i => {
-    if (opened.value === i) {
-        opened.value = false
-        return
-    }
-
-    opened.value = i;
+const changeTab = (i) => {
+    opened.value = i
 }
 </script>
 
 <template>
-    <Breadcrumb title="Apply for REALS" :breads="[{
+    <Breadcrumb title="Apply for KNB" :breads="[{
         to: '/',
         name: 'Home',
     }, {
         to: `/apply`,
-        name: 'Application',
+        name: 'How to Apply',
     }]" />
 
-    <section id="apply" class="p-8 lg:p-16 min-h-screen">
-        <h1 class="text-2xl font-bold text-sky-500">Welcome to REALS Application!</h1>
+    <section id="apply" class="p-8 lg:p-16 min-h-screen umbg bg-slate-200">
+        <h1 class="text-2xl font-bold text-sky-500">How to Apply for KNB 2023</h1>
 
-        <p class="my-4">
-            In attempt to maximise the impacts and knowledge transfer on the “Years of Living Precariously: Maintaining Resilience Amidst a Global Pandemic in Europe and Asia”, we aim to accommodate as many audience as possible. Hence, REALS 2021 is open to applicants with the following categories:
-        </p>
+        <div class="grid grid-cols-3 border-b border-b-sky-400 my-6" data-aos="fade-down">
+            <span :class="{
+                'bg-sky-400 text-white rounded-t-xl': opened == i,
+                'cursor-pointer': opened != i
+            }"
+            class="text-center p-2 md:p-4"
+            v-for="(program, i) in programs"
+            :key="i"
+            v-text="program.name"
+            @click="changeTab(i)" />
+        </div>
 
-        <ul class="flex flex-col list-none">
-            <!-- <li class="border-y" v-for="(applicant, i) in applicants" :key="i">
-                <h4 class="flex flex-row justify-between items-center py-3 cursor-pointer" @click="handleAccordion(i)">
-                    <span v-text="applicant.name" />
-                    <i class="mdi mdi-chevron-down" :class="{'rotate-180': opened === i}" />
-                </h4>
+        <h2 class="text-3xl font-bold border-l-4 border-sky-400 pl-3 my-8" data-aos="fade-up" v-text="`Prepare all the required documents.`" />
 
-                <div class="prose max-w-full prose-p:text-justify p-3 border-l-4 border-l-iFest" v-show="opened === i" v-html="applicant.description"></div>
-            </li> -->
-        </ul>
+        <div class="p-8 rounded-lg bg-slate-50 shadow-lg shadow-sky-200 mt-4">
+            <ol class="list-decimal list-inside mb-6">
+                <li v-for="(document, i) in programs[opened].application.documents" :key="i" v-text="document" />
+            </ol>
 
-        <h2 class="text-lg font-semibold my-6">For more information</h2>
+            <h3 class="font-medium text-lg mb-3">Note:</h3>
+            
+            <ul class="list-disc list-inside">
+                <li v-for="(note, i) in programs[opened].application.notes" :key="i" v-text="note" />
+            </ul>
+        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- <router-link :to="applicant.to" v-for="(applicant, i) in applicants" :key="i">
-                <Button class="w-full">{{ applicant.name }}</Button>
-            </router-link> -->
+        <h2 class="text-3xl font-bold border-l-4 border-sky-400 pl-3 mt-12 mb-8" data-aos="fade-up" v-text="`Steps`" />
+        
+        <div class="mb-6" v-for="(step, i) in programs[opened].application.steps" :key="i">
+            <h3 class="font-medium text lg mb-3" v-text="`Step ${1 + i}: ${ step.name }`" />
+
+            <div class="p-8 rounded-lg bg-slate-50 shadow-lg shadow-sky-200 mb-4 max-w-full prose" v-for="(detail, j) in step.details" :key="j" v-html="detail" />
         </div>
     </section>
 </template>

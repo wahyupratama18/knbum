@@ -145,7 +145,48 @@ const programs = [{
             'Cookery Education',
             'Apparel Design Education',
         ]
-    }]
+    }],
+    application: {
+        documents: [
+            'A Scan Copy of Passport ID Page/Citizenship ID;',
+            'A Scan Copy of Academic/Degree Certificate(s);',
+            'A Scan Copy of Academic Transcript(s);',
+            'A Letter of Recommendation from an Indonesian Embassy/Consulate General of Indonesia;',
+            'A Letter of Recommendation from the Employer/Immediate Supervisor',
+            'A Letter of Academic Recommendation from previous schools;',
+            'A Certificate of English Proficiency Test (IBT TOEFL of 80 / IELTS of 6.0 / TOEIC of 700).',
+        ],
+        notes: [
+            'The type and the maximum size of the documents are .pdf, 5 Mb.',
+            'All the required documents must be in English.',
+        ],
+        steps: [{
+            name: 'Request for a Letter of Recommendation.',
+            details: [
+                'Download the Invitation Letter on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Submit the offer letter by attaching <b>a scanned copy of passport, academic certificate(s), and academic transcript(s)</b> to the Indonesian Representative (The Embassy of The Republic of Indonesia or Consulate General of the Republic of Indonesia) in the relevant country to obtain a Letter of Recommendation from the Indonesian Representative as the main requirement to continue the registration process.',
+            ]
+        }, {
+            name: 'KNB Online Application.',
+            details: [
+                'Visit <b>the official website of KNB Scholarship:</b> <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Create an account and register on the KNB Scholarship website by clicking <b>\'Apply Now\'</b> and fill in your email address. Check your email and click on the confirmation link sent by KNB to activate your account.',
+                'Fill in your application by clicking the <b>‘Create Application’.</b> The required information contains different sections (personal information, academic information, university and study program, statement, and submit data).',
+                'Upload a scan copy of Passport ID Page/Citizenship ID and your photo in the personal information section.',
+                'For the Academic Information section, please upload your documents (Indonesian Embassy / Consulate General Recommendation, The Employer / Immediate Supervisor Recommendation, Academic Recommendation, Academic Transcript, Academic Certificate) in the place provided.',
+                'For the University and Study Program section, choose your 2 preferred universities and study program offered by KNB.',
+                'In the last section, read the personal statement carefully and fill in the medical condition based on your actual circumstances.',
+                'After you have successfully provided all the information and required documents, click <b>‘Submit’.</b>',
+            ]
+        }, {
+            name: 'Selection and Final Result.',
+            details: [
+                '<b>Selection process:</b> administrative and online interview.',
+                'Final Announcement will be announced no later than the 2nd week of June 2023 and available online on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a> and through the Indonesian Representative publication network.',
+                'After receiving the selection results, candidates who receive the KNB Scholarship are required to submit a Statement of Receiving KNB Scholarship, Letter of Agreement KNB Scholarship, scanned passport biodata page, and Confirmation Willingness to come to Indonesia, on July 2023, through the Indonesian Representative in the country concerned.',
+            ]
+        }]
+    }
 }, {
     name: 'Master',
     eligibilities: [
@@ -234,7 +275,48 @@ const programs = [{
             'Cookery Education',
             'Apparel Design Education',
         ]
-    }]
+    }],
+    application: {
+        documents: [
+            'A Scan Copy of Passport ID Page/Citizenship ID;',
+            'A Scan Copy of Academic/Degree Certificate(s);',
+            'A Scan Copy of Academic Transcript(s);',
+            'A Letter of Recommendation from an Indonesian Embassy/Consulate General of Indonesia;',
+            'A Letter of Recommendation from the Employer/Immediate Supervisor',
+            'A Letter of Academic Recommendation from previous schools;',
+            'A Certificate of English Proficiency Test (IBT TOEFL of 80 / IELTS of 6.0 / TOEIC of 700).',
+        ],
+        notes: [
+            'The type and the maximum size of the documents are .pdf, 5 Mb.',
+            'All the required documents must be in English.',
+        ],
+        steps: [{
+            name: 'Request for a Letter of Recommendation.',
+            details: [
+                'Download the Invitation Letter on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Submit the offer letter by attaching <b>a scanned copy of passport, academic certificate(s), and academic transcript(s)</b> to the Indonesian Representative (The Embassy of The Republic of Indonesia or Consulate General of the Republic of Indonesia) in the relevant country to obtain a Letter of Recommendation from the Indonesian Representative as the main requirement to continue the registration process.',
+            ]
+        }, {
+            name: 'KNB Online Application.',
+            details: [
+                'Visit <b>the official website of KNB Scholarship:</b> <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Create an account and register on the KNB Scholarship website by clicking <b>\'Apply Now\'</b> and fill in your email address. Check your email and click on the confirmation link sent by KNB to activate your account.',
+                'Fill in your application by clicking the <b>‘Create Application’.</b> The required information contains different sections (personal information, academic information, university and study program, statement, and submit data).',
+                'Upload a scan copy of Passport ID Page/Citizenship ID and your photo in the personal information section.',
+                'For the Academic Information section, please upload your documents (Indonesian Embassy / Consulate General Recommendation, The Employer / Immediate Supervisor Recommendation, Academic Recommendation, Academic Transcript, Academic Certificate) in the place provided.',
+                'For the University and Study Program section, choose your 2 preferred universities and study program offered by KNB.',
+                'In the last section, read the personal statement carefully and fill in the medical condition based on your actual circumstances.',
+                'After you have successfully provided all the information and required documents, click <b>‘Submit’.</b>',
+            ]
+        }, {
+            name: 'Selection and Final Result.',
+            details: [
+                '<b>Selection process:</b> administrative and online interview.',
+                'Final Announcement will be announced no later than the 2nd week of June 2023 and available online on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a> and through the Indonesian Representative publication network.',
+                'After receiving the selection results, candidates who receive the KNB Scholarship are required to submit a Statement of Receiving KNB Scholarship, Letter of Agreement KNB Scholarship, scanned passport biodata page, and Confirmation Willingness to come to Indonesia, on July 2023, through the Indonesian Representative in the country concerned.',
+            ]
+        }]
+    }
 }, {
     name: 'Doctoral',
     eligibilities: [
@@ -292,7 +374,55 @@ const programs = [{
             'Indonesian Language Education',
             'English Language Education',
         ]
-    }, ]
+    }],
+    application: {
+        documents: [
+            'A Scan Copy of Passport ID Page/Citizenship ID;',
+            'A Scan Copy of Academic/Degree Certificate(s) (S1 & S2);',
+            'A Scan Copy of Academic Transcript(s) (S1 & S2);',
+            'A Letter of Recommendation from an Indonesian Embassy/Consulate General of Indonesia;',
+            'A Letter of Recommendation from the Employer/Immediate Supervisor',
+            'A Letter of Academic Recommendation from previous schools;',
+            'A Certificate of English Proficiency Test (IBT TOEFL of 80 / IELTS of 6.0 / TOEIC of 700).',
+            'A Letter of Recommendation from a Prospective Supervisor at UM;',
+            'A Statement of Purpose.',
+        ],
+        notes: [
+            'The type and the maximum size of the documents are .pdf, 5 Mb.',
+            'All the required documents must be in English.',
+            'Attach points 6, 8, and 9 into one pdf document and upload it in KNB portal, \'academic recommendation\' section 2.',
+        ],
+        steps: [{
+            name: 'Request for a Letter of Recommendation.',
+            details: [
+                'Download the Invitation Letter on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Submit the offer letter by attaching <b>a scanned copy of passport, academic certificate(s), and academic transcript(s)</b> to the Indonesian Representative (The Embassy of The Republic of Indonesia or Consulate General of the Republic of Indonesia) in the relevant country to obtain a Letter of Recommendation from the Indonesian Representative as the main requirement to continue the registration process.',
+                '<b>Contact your potential supervisor at Universitas Negeri Malang</b> and ask for a Letter of recommendation from a Prospective Supervisor.'
+            ]
+        }, {
+            name: 'KNB Online Application.',
+            details: [
+                'Visit <b>the official website of KNB Scholarship:</b> <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a>',
+                'Create an account and register on the KNB Scholarship website by clicking <b>\'Apply Now\'</b> and fill in your email address. Check your email and click on the confirmation link sent by KNB to activate your account.',
+                'Fill in your application by clicking the <b>‘Create Application’.</b> The required information contains different sections (personal information, academic information, university and study program, statement, and submit data).',
+                'Upload a scan copy of Passport ID Page/Citizenship ID and your photo in the personal information section.',
+                `For the Academic Information section, please upload your documents (Indonesian Embassy / Consulate General Recommendation, The Employer / Immediate Supervisor Recommendation, Academic Recommendation, Academic Transcript, Academic Certificate) in the place provided.
+                <br><b>Note:</b><br>
+                Attach Letter of Academic Recommendation from previous schools, Letter of Recommendation from a Prospective Supervisor at UM, and Statement of Purpose into one pdf document and upload it in the 'academic recommendation'.
+                `,
+                'For the University and Study Program section, choose your 2 preferred universities and study program offered by KNB.',
+                'In the last section, read the personal statement carefully and fill in the medical condition based on your actual circumstances.',
+                'After you have successfully provided all the information and required documents, click <b>‘Submit’.</b>',
+            ]
+        }, {
+            name: 'Selection and Final Result.',
+            details: [
+                '<b>Selection process:</b> administrative and online interview.',
+                'Final Announcement will be announced no later than the 2nd week of June 2023 and available online on the KNB Scholarship Official website: <a href="https://knb.kemdikbud.go.id/" target="_blank">Click here.</a> and through the Indonesian Representative publication network.',
+                'After receiving the selection results, candidates who receive the KNB Scholarship are required to submit a Statement of Receiving KNB Scholarship, Letter of Agreement KNB Scholarship, scanned passport biodata page, and Confirmation Willingness to come to Indonesia, on July 2023, through the Indonesian Representative in the country concerned.',
+            ]
+        }]
+    }
 }].map(program => {
     program.faculties = program.faculties.map(faculty => {
         faculty.faculty = faculties[faculty.faculty_id]

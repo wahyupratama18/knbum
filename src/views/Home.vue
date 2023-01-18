@@ -172,9 +172,9 @@ const changeTab = (i) => {
         </section>
 
         <section id="further" class="bg-sky-500 p-8 lg:p-16 text-white text-center">
-            <h2 class="text-xl mb-4">Further Information How to Apply</h2>
+            <h2 class="text-xl mb-4">Further Information on How to Apply</h2>
 
-            <router-link to="/">
+            <router-link to="/apply">
                 <Button>Click Here</Button>
             </router-link>
         </section>
@@ -203,6 +203,12 @@ const changeTab = (i) => {
                 <a :href="gallery" target="_blank" v-for="(gallery, i) in galleries.slice(0, 6)" :key="i">
                     <img class="block object-cover object-center w-full h-full rounded-lg" :src="gallery" alt="Gallery collections of KNB UM">
                 </a>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <router-link to="/galleries">
+                    <Button>View More</Button>
+                </router-link>
             </div>
         </section>
     </div>
