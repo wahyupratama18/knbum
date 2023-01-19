@@ -14,7 +14,7 @@ const changeTab = (i) => {
 
 <template>
     <div>
-        <section id="welcome" class="w-full min-h-screen bg-cover relative text-white bg-[url('background.jpg')] bg-[center_top] bg-no-repeat bg-fixed flex items-center">
+        <section id="welcome" class="w-full min-h-screen bg-cover relative text-white bg-[url('/src/assets/background.jpg')] bg-[center_top] bg-no-repeat bg-fixed flex items-center">
             <div class="w-full text-center">
                 <h1 class="text-5xl font-bold" data-aos="fade-down">KNB</h1>
                 <h2 class="text-xl font-semibold my-4" data-aos="fade-right">Kemitraan Negara Berkembang</h2>
