@@ -187,7 +187,7 @@ const changeTab = (i) => {
                 rewind: true,
             }" aria-label="Testimonials carousel">
                 <SplideSlide v-for="(testimonial, index) in testimonials" :key="index">
-                    <img :src="testimonial" class="rounded-lg">
+                    <img :src="testimonial" class="rounded-lg w-full">
                 </SplideSlide>
             </Splide>
         </section>

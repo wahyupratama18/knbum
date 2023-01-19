@@ -442,9 +442,9 @@ const howTos = [
 ]
 
 const testimonials = [
-    'testimonials/1.jpg',
-    'testimonials/2.jpg',
-    'testimonials/3.jpg',
+    'testimonials/1.png',
+    'testimonials/2.png',
+    'testimonials/3.png',
 ]
 
 const galleries = [
