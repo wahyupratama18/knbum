@@ -22,10 +22,10 @@ const infos = [{
 
 const flyers = [{
     text: 'Download Brochure',
-    url: 'https://drive.google.com/file/d/1O4lEdzRBdLwRpYoUytLlnIPzMeL0RCbD/view?usp=sharing'
+    url: 'https://drive.google.com/file/d/1yCKCvh_s_GuxI7YFjSAOxCnAPJkXgfmr/view?usp=sharing'
 }, {
     text: 'Download Guideline',
-    url: 'https://drive.google.com/file/d/1TGMqsa3l1RqS7XI2HigSSvrEHcgdDrBm/view?usp=sharing'
+    url: 'https://drive.google.com/file/d/1ZI8AFnVK0154CDz2EJwFOpExC9iZmue9/view?usp=sharing'
 }]
 
 const faculties = [{
