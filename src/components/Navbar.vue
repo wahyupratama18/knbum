@@ -5,12 +5,18 @@ import { programs } from '../data'
 
 const sidebar = ref(false)
 
+const determineOverflow = () => {
+    document.querySelector('body').style.overflow = sidebar.value ? 'hidden' : null
+}
+
 const toggleSidebar = () => {
     sidebar.value = ! sidebar.value
+    determineOverflow()
 }
 
 const closeSidebar = () => {
     sidebar.value = false
+    determineOverflow()
 }
 
 const menus = [{
